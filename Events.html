@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Events</title>
+    <style>
+        /* Reset basic styles */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container to centralize layout */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+      
+
+        /* Section Styling */
+        section {
+            background-color: #fff;
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        /* Event Showcase Styling */
+        .event-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .event-item img, .event-item video {
+            width: 100%;
+            max-width: 48%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-item .event-details {
+            width: 48%;
+            padding-left: 20px;
+        }
+
+        .event-item .event-details h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .event-item .event-details p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* Video section for sports events */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Gallery images styling */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .event-item {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .event-item img, .event-item video {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .event-item .event-details {
+                width: 100%;
+                padding-left: 0;
+                text-align: center;
+            }
+
+            .gallery img {
+                max-width: 100%;
+            }
+        }
+
+
+        /* Cover Page Styling */
+        .cover-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('esh.png'); /* Replace with your cover image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            filter: brightness(0.8); /* Darken the background for text contrast */
+        }
+
+        .cover-container h1 {
+            color: white;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            opacity: 0;
+            animation: fadeInText 3s forwards;
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+     <!-- Cover Page -->
+     <div class="cover-container">
+        <h1></h1>
+    </div> 
+
+    <!-- Main Container -->
+    <div class="container">
+       
+ <!-- Annual Events Section -->
+        <section>
+            <h2>Annual Events</h2>
+            <div class="event-item" style="margin-top: 3vh;">
+                <img src="af.jpg" alt="Annual Event Image">
+                <div class="event-details"style="margin-top: 3vh;">
+                    <h3>Annual Cultural Fest</h3>
+                    <p>Our Annual Cultural Fest is a celebration of art, music, and dance. Students showcase their talents in front of the entire school community, making it a highlight of the year.</p>
+                    <p><strong>Date:</strong> May 15, 2024</p>
+                </div>
+
+                <div class="event-item" style="margin-top: 3vh;">
+                    <img src="eh.jpg" alt="Annual Event Image">
+                    <div class="event-details" style="margin-top: 3vh;">
+                        <h3>karkhana Fest</h3>
+                        <p>Our Annual Cultural Fest is a celebration of art, music, and dance. Students showcase their talents in front of the entire school community, making it a highlight of the year.</p>
+                        <p><strong>Date:</strong> May 15, 2024</p>
+                    </div>
+
+            </div>
+            <div class="event-item">
+                <img src="f.jpg" alt="Annual Event Image">
+                <div class="event-details">
+                    <h3>Digi-Event</h3>
+                    <p>The Science Fair is where students display innovative projects and experiments. It’s an excellent opportunity for students to showcase their scientific knowledge and creativity.</p>
+                    <p><strong>Date:</strong> September 22, 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sports Events Section -->
+        <section>
+            <h2>Sports Events</h2>
+            <div class="event-item">
+                <video controls>
+                    <source src="sports_event1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="event-details">
+                    <h3>Annual Football Tournament</h3>
+                    <p>Our football tournament brings together the best teams in school to compete for the coveted championship trophy. It's an event full of passion, energy, and teamwork!</p>
+                    <p><strong>Date:</strong> April 10, 2024</p>
+                </div>
+            </div>
+            <div class="event-item">
+                <img src="sports_event2.jpg" alt="Sports Event Image">
+                <div class="event-details">
+                    <h3>Track & Field Championship</h3>
+                    <p>The Track & Field Championship is one of the most awaited events. Watch our athletes race for gold, showcasing speed, endurance, and sportsmanship.</p>
+                    <p><strong>Date:</strong> June 5, 2024</p>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="video-container">
+                
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section>
+            <h2>Event Gallery</h2>
+            <div class="gallery">
+                <img src="gallery_image1.jpg" alt="Gallery Image 1">
+                <img src="gallery_image2.jpg" alt="Gallery Image 2">
+                <img src="gallery_image3.jpg" alt="Gallery Image 3">
+                <img src="gallery_image4.jpg" alt="Gallery Image 4">
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>© 2024 School Events. All Rights Reserved. | <a href="contact.html">Contact Us</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>

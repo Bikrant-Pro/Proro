@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Life</title>
+    <style>
+        /* Reset basic styles */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container for overall structure */
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            background-color: #4b9f77;
+            border-radius: 10px;
+            padding: 40px 20px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 40px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #4b9f77;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            text-align: center;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* Gallery section */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Testimonials Styling */
+        .testimonials {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .testimonial-card {
+            width: 300px;
+            background-color: #fafafa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-card p {
+            font-size: 1.1rem;
+            color: #555;
+            text-align: center;
+        }
+
+        .testimonial-card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #4b9f77;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        /* FAQ Styling */
+        .faq {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .faq h1 {
+            font-size: 2rem;
+            color: #4b9f77;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .faq-item {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #4b9f77;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1rem;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            section h1 {
+                font-size: 2rem;
+            }
+
+            .gallery img {
+                max-width: 100%;
+            }
+
+            .testimonials {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .testimonial-card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Hostel Life</h1>
+        </header>
+
+        <!-- Overview Section -->
+        <section>
+            <h1>Overview</h1>
+            <p>Hostel life is an incredible journey that brings together students from diverse backgrounds. It offers a unique blend of independence, social interaction, and personal growth. In a hostel, you'll not only find a place to stay but also a community of peers who share the same experiences, challenges, and memories that last a lifetime.</p>
+        </section>
+
+        <!-- Gallery Section -->
+        <section>
+            <h1>Gallery</h1>
+            <div class="gallery">
+                <img src="image.png" alt="Hostel Room" />
+                <img src="image.png" alt="Hostel Common Area" />
+                <img src="image.png" alt="Outdoor Activities" />
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h1>What Our Residents Say</h1>
+            <div class="testimonial-card">
+                <p>"Living in the hostel was an unforgettable experience. The friendships I made and the memories we created together will stay with me forever."</p>
+                <h3>John Doe</h3>
+            </div>
+            <div class="testimonial-card">
+                <p>"The hostel gave me a sense of community and a place where I could truly thrive while balancing academics and social life. Highly recommended!"</p>
+                <h3>Jane Smith</h3>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h1>Interactivity FAQs</h1>
+            <div class="faq-item">
+                <strong>Q: How can I interact with other hostelmates?</strong>
+                <p>A: We encourage group activities, events, and social gatherings. You can also join study sessions or participate in organized tournaments!</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q: Are meals provided in the hostel?</strong>
+                <p>A: Yes, the hostel offers breakfast, lunch, and dinner every day, with a variety of meal options catering to different tastes and dietary preferences.</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q: Is there Wi-Fi in the hostel?</strong>
+                <p>A: Absolutely! We provide high-speed Wi-Fi access in all rooms and common areas to help you stay connected.</p>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>© 2024 Hostel Life. All Rights Reserved. | <a href="contact.html">Contact Us</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
